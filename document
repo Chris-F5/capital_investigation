@@ -9,14 +9,14 @@ growth, wealth inequality is increased [1]. This report investigates his
 proposition by considering a simple economic model.
 
                                   METHODOLOGY
-Our model consists of 50,000 individuals, each starting with one unit wealth
-and a randomly selected, fixed income. Each timestep begins with the increase
-of each individual wealth by the global return on capital constant. Then
-individuals are randomly grouped into pairs, each pair randomly distributes
-their shared wealth between themselves - this is to simulate economic exchange.
-Finally, every individual receives their income and the total wealth in the
-system is normalized to 50,000 units - this is to avoid wage inflation and
-numerical stability issues.
+Our model [2] consists of 50,000 individuals, each starting with one unit
+wealth and a randomly selected, fixed income. Each timestep begins with
+the increase of each individual wealth by the global return on capital
+constant. Then individuals are randomly grouped into pairs, each pair randomly
+distributes their shared wealth between themselves - this is to simulate
+economic exchange. Finally, every individual receives their income and the
+total wealth in the system is normalized to 50,000 units - this is to avoid
+wage inflation and numerical stability issues.
     The total income earned and total return on capital per timestep are equal
 to 50,000*g and 50,000*r respectively, where g is the economic growth constant
 and r is the return on capital constant.
@@ -47,3 +47,4 @@ property.
 
 --
 [1] T. Piketty, Capital in the Twenty-First Century (August 2013)
+[2] Model Source, https://github.com/Chris-F5/capital_investigation
