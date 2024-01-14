@@ -1,0 +1,49 @@
+THE EFFECT OF THE DIFFERENCE BETWEEN RETURN ON CAPITAL AND ECONOMIC GROWTH ON
+                              ECONOMIC INEQUALITY
+                           Christopher Lang (cl982)
+                                 January 2024
+
+                                     GOALS
+Thomas Piketty argues that when return on capital is greater than economic
+growth, wealth inequality is increased [1]. This report investigates his
+proposition by considering a simple economic model.
+
+                                  METHODOLOGY
+Our model consists of 50,000 individuals, each starting with one unit wealth
+and a randomly selected, fixed income. Each timestep begins with the increase
+of each individual wealth by the global return on capital constant. Then
+individuals are randomly grouped into pairs, each pair randomly distributes
+their shared wealth between themselves - this is to simulate economic exchange.
+Finally, every individual receives their income and the total wealth in the
+system is normalized to 50,000 units - this is to avoid wage inflation and
+numerical stability issues.
+    The total income earned and total return on capital per timestep are equal
+to 50,000*g and 50,000*r respectively, where g is the economic growth constant
+and r is the return on capital constant.
+    Twenty simulations will be run with return on capital constant ranging
+between 0% and 19%, and a fixed economic growth constant equal to 5%. The
+return on capital constant is to be plotted against the average gini coefficient
+in the last 50 timesteps of a 150 timesteps simulation.
+
+                                    RESULTS
+The following graph, produced by our model, shows a strong positive linear
+correlation between return on capital and the gini coefficient, measuring
+economic inequality.
+!IMAGE_SIZE 250
+!IMAGE plot.png
+
+
+                                  CONCLUSION
+Our evidence supports Thomas Piketty's argument. We have shown that in a
+simple economic model, when return on capital is greater than economic growth,
+economic inequality is increased. In fact, inequality continues to increase as
+return on capital increases beyond economic growth.
+    It is important to acknowledge the limitations of our model. We admit that
+there may exist a property that applies to real economic systems, but not our
+model, that nullifies this effect. However, we are not aware of such a
+property.
+
+
+
+--
+[1] T. Piketty, Capital in the Twenty-First Century (August 2013)
